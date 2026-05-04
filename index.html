@@ -14,6 +14,8 @@
     --deep-sage: #4a5c3f;
     --terracotta: #c4704a;
     --blush: #e8c4b0;
+    --petal: #f2d4dc;
+    --petal-deep: #d4919e;
     --bark: #3d2e1e;
     --straw: #d4bc82;
     --moss: #5a6b4a;
@@ -143,6 +145,7 @@
   .hero-right-bg {
     position: absolute; inset: 0;
     background:
+      radial-gradient(ellipse at 20% 75%, rgba(242,212,220,0.45) 0%, transparent 50%),
       radial-gradient(ellipse at 30% 60%, rgba(196,112,74,0.18) 0%, transparent 60%),
       radial-gradient(ellipse at 80% 20%, rgba(122,140,110,0.22) 0%, transparent 55%),
       linear-gradient(160deg, #d4bc82 0%, #c4b08a 30%, #a89060 100%);
@@ -271,7 +274,7 @@
     content: '';
     position: absolute; bottom: 0; left: 0;
     width: 100%; height: 3px;
-    background: var(--sage);
+    background: linear-gradient(90deg, var(--sage), var(--petal-deep));
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s;
@@ -336,7 +339,7 @@
     position: absolute;
     bottom: -1.5rem; right: -1.5rem;
     width: 7rem; height: 7rem;
-    background: var(--terracotta);
+    background: var(--petal-deep);
     z-index: -1;
   }
 
@@ -402,7 +405,7 @@
   }
 
   /* -- TESTIMONIALS -- */
-  #testimonials { background: var(--warm-white); }
+  #testimonials { background: var(--petal); }
 
   .testimonials-grid {
     margin-top: 3rem;
