@@ -877,24 +877,25 @@
   </div>
 
   <div class="fade-up">
-    <div class="contact-form">
+    <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/success">
+      <input type="hidden" name="form-name" value="contact">
       <div class="form-row">
         <div class="form-field">
-          <label>First Name</label>
-          <input type="text" placeholder="Jane">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Jane">
         </div>
         <div class="form-field">
-          <label>Last Name</label>
-          <input type="text" placeholder="Smith">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Smith">
         </div>
       </div>
       <div class="form-field">
-        <label>Email</label>
-        <input type="email" placeholder="jane@email.com">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="jane@email.com">
       </div>
       <div class="form-field">
-        <label>I'm interested in…</label>
-        <select>
+        <label for="interest">I'm interested in…</label>
+        <select id="interest" name="interest">
           <option value="">Select a category</option>
           <option>Floral Arrangements</option>
           <option>Fresh Produce</option>
@@ -908,11 +909,11 @@
         </select>
       </div>
       <div class="form-field">
-        <label>Message</label>
-        <textarea placeholder="Tell us what you're looking for, or ask us anything…"></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us what you're looking for, or ask us anything…"></textarea>
       </div>
-      <button class="form-submit" onclick="alert('Thanks! We\'ll be in touch soon 🌿')">Send Message</button>
-    </div>
+      <button type="submit" class="form-submit">Send Message</button>
+    </form>
   </div>
 </section>
 
