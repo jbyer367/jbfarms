@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Message Sent — JB Farm & Florals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f5f0e8;
+    --warm-white: #faf7f2;
+    --sage: #7a8c6e;
+    --deep-sage: #4a5c3f;
+    --terracotta: #c4704a;
+    --bark: #3d2e1e;
+    --straw: #d4bc82;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--warm-white);
+    color: var(--bark);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .icon {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    color: var(--bark);
+    margin-bottom: 1.5rem;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--deep-sage);
+  }
+
+  p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--bark);
+    opacity: 0.7;
+    max-width: 28rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+
+  a {
+    display: inline-block;
+    background: var(--deep-sage);
+    color: var(--warm-white);
+    padding: 0.95rem 2.4rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.25s, transform 0.2s;
+  }
+
+  a:hover {
+    background: var(--bark);
+    transform: translateY(-2px);
+  }
+
+  .divider {
+    width: 2rem;
+    height: 1px;
+    background: var(--sage);
+    margin: 2rem auto;
+  }
+</style>
+</head>
+<body>
+  <span class="icon">🌿</span>
+  <p class="label">Message received</p>
+  <h1>Thanks for<br>reaching <em>out.</em></h1>
+  <p>Judy will be in touch soon. In the meantime, feel free to browse what's growing.</p>
+  <div class="divider"></div>
+  <a href="/">Back to JB Farm & Florals</a>
+</body>
+</html>
