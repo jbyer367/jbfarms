@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floral Arrangements — JB Farm & Florals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f5f0e8;
+    --warm-white: #faf7f2;
+    --sage: #7a8c6e;
+    --deep-sage: #4a5c3f;
+    --terracotta: #c4704a;
+    --petal: #f2d4dc;
+    --petal-deep: #d4919e;
+    --bark: #3d2e1e;
+    --straw: #d4bc82;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--warm-white); color: var(--bark); font-family: 'DM Sans', sans-serif; font-weight: 300; overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    padding: 1.2rem 4rem;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(250,247,242,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(122,140,110,0.2);
+  }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--deep-sage); letter-spacing: 0.04em; text-decoration: none; }
+  .nav-logo span { color: var(--terracotta); font-style: italic; }
+  .nav-back { font-family: 'DM Sans', sans-serif; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--bark); text-decoration: none; opacity: 0.6; transition: opacity 0.2s; }
+  .nav-back:hover { opacity: 1; }
+
+  .gallery-header {
+    padding: 10rem 8rem 4rem;
+    background: var(--cream);
+  }
+  .section-label { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--sage); margin-bottom: 1rem; }
+  .gallery-title { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 4vw, 4rem); color: var(--bark); line-height: 1.1; margin-bottom: 1rem; }
+  .gallery-title em { color: var(--deep-sage); font-style: italic; }
+  .gallery-subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: var(--bark); opacity: 0.65; }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    padding: 3rem 8rem 6rem;
+    background: var(--warm-white);
+  }
+  .gallery-item { aspect-ratio: 1; overflow: hidden; background: var(--cream); }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+  .gallery-item:hover img { transform: scale(1.04); }
+
+  footer {
+    background: var(--bark); color: var(--cream);
+    padding: 2.5rem 8rem;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-brand { font-family: 'Playfair Display', serif; font-size: 1.1rem; }
+  .footer-brand span { color: var(--straw); font-style: italic; }
+  .footer-back { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); opacity: 0.55; text-decoration: none; transition: opacity 0.2s; }
+  .footer-back:hover { opacity: 1; }
+
+  @media (max-width: 1100px) {
+    nav { padding: 1.2rem 2.5rem; }
+    .gallery-header { padding: 9rem 4rem 3rem; }
+    .gallery-grid { padding: 2rem 4rem 5rem; }
+    footer { padding: 2.5rem 4rem; }
+  }
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .gallery-header { padding: 8rem 2rem 2.5rem; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); padding: 1.5rem 1rem 4rem; }
+    footer { padding: 2rem; flex-direction: column; gap: 1rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">JB Farm <span>&</span> Florals</a>
+  <a href="/#offerings" class="nav-back">← Back to site</a>
+</nav>
+
+<div class="gallery-header">
+  <p class="section-label">Gallery</p>
+  <h1 class="gallery-title">Floral <em>Arrangements</em></h1>
+  <p class="gallery-subtitle">Custom bouquets and arrangements, made to order from the garden.</p>
+</div>
+
+<div class="gallery-grid">
+  <div class="gallery-item"><img src="../images/florals/0584BD60-5ABC-411D-97DE-1F306E639921.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/658C68D7-8744-46EC-B470-8062D3B09AB7.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/6013CEE6-69A4-4F93-A989-C4D71B9EB00A.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/8533BDC4-C27E-428F-86E6-5D5079226B35 (1).jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/8533BDC4-C27E-428F-86E6-5D5079226B35.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/52126FAD-3625-466E-8D2A-3F17BE25C03E.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/18066795-4254-4C2B-9049-36E44D0A0363.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/82974109-1BAB-43E4-9A38-7C76D20D67CA.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/A4D7C8A0-2A21-4FAD-A2CF-5C7406FAB55F.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/A4452E6A-7703-4E9E-A3CC-EAF7B0B920BD.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/C72BE051-382E-4168-B49D-01BFF0F9264B.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/D5DC421D-63D9-465D-AF3E-94A27898AE51.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/F3FBDB3A-9C21-4224-9CE9-1D66C199F653.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/1B184DA9-DFA6-4C71-89E6-429D9868F5DA.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/1C877DFA-46E3-46CB-A394-D9E9E4C8E7E5.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/2B125EC9-0176-478C-9A1A-C8D4EAB66DCE.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/6FA7C720-53B3-4738-AD1C-D183189B9FD8.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/7F2E1893-64CE-4EE4-A834-E6FBE7A0C4F6.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/16FE37E3-5313-4701-8EB6-3CBF477A7415.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/40B4507C-48A7-4322-9945-2263D82A2E58.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/85A45E69-FE66-42AE-BC46-304DA359E654.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/104A4E59-D03B-431E-937D-A550CF9B9849 (1).jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/104A4E59-D03B-431E-937D-A550CF9B9849.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/0294E83E-6F8B-48C2-9019-8D42432A6F03.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3113.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3115.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3120.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3121.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3178.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_2327.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_2795.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_2813.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_2814.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_2815.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_2816.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_2818.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_2921.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_2972.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_2973.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_2974.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3053.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3072.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3073.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3090.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3582.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3179.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3180.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3212.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3213.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3362.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3365.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3475.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3476.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3479.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3481.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3482.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3483.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3484.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3485.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3565.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3571.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3572.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3573.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3574.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3575.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3579.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3882.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3883.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_4142.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_4397.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_4413.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_4414.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_5445.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_5680.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3583.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3587.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3589.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3593.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3600.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3617.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3618.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3624.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3627 (1).jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3627.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3628.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3629.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3634.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3697.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3698.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3699.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3739.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3742.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3743.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3848.jpg" alt="Floral arrangement"></div>
+  <div class="gallery-item"><img src="../images/florals/IMG_3881.jpg" alt="Floral arrangement"></div>
+</div>
+
+<footer>
+  <div class="footer-brand">JB Farm <span>&</span> Florals</div>
+  <a href="/" class="footer-back">← Back to main site</a>
+</footer>
+
+</body>
+</html>
